@@ -1,0 +1,8 @@
+---
+name: github
+provider: github.com
+repository: docker-rubocop
+url: https://github.com/cardboardci/docker-rubocop
+clone:
+  ssh: git@github.com:cardboardci/docker-rubocop.git
+  https: https://github.com/cardboardci/docker-rubocop.git
