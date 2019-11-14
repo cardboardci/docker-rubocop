@@ -1,2 +1,2 @@
-rake -v 13.0.1
-rubocop -v 0.76.0
+rake:13.0.1
+rubocop:0.76.0

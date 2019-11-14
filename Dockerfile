@@ -9,7 +9,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN gem install rubocop
+COPY provision/gemlist /cardboardci/gemlist
+RUN xargs -a /cardboardci/gemlist gem install 
 
 USER cardboardci
 
