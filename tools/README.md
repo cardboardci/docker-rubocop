@@ -11,3 +11,11 @@ Run from the root of the repository.
 ```bash
 docker run --rm -v `pwd`:/workspace --workdir /workspace ubuntu:latest bash tools/upgrade.bash
 ```
+
+### gem
+
+Run from the root of the repository.
+
+```bash
+docker run --rm -v `pwd`:/workspace --workdir /workspace ruby:latest bash tools/gem.bash
+```
