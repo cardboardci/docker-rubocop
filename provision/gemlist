@@ -1,0 +1,2 @@
+rake -v 13.0.1
+rubocop -v 0.76.0
