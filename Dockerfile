@@ -1,5 +1,7 @@
-FROM cardboardci/ci-core:latest
+FROM cardboardci/ci-core:focal
 USER root
+
+ARG DEBIAN_FRONTEND=noninteractive
 
 COPY provision/pkglist /cardboardci/pkglist
 RUN apt-get update \
@@ -7,7 +9,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN gem install rubocop
+COPY provision/gemlist /cardboardci/gemlist
+RUN xargs -a /cardboardci/gemlist gem install 
 
 USER cardboardci
 
