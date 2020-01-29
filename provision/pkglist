@@ -1,5 +1,5 @@
 make=4.2.1-1.2
-bison=2:3.4.2+dfsg-1
+bison=2:3.5.1+dfsg-1
 dpkg-dev=1.19.7ubuntu2
 libgdbm-dev=1.18.1-5
 ruby=1:2.5.2
