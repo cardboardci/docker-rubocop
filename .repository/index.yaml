@@ -1,0 +1,18 @@
+slug: docker-rubocop
+description: A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+project: cardboardci
+namespace: docker
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "ruby",
+    "dockerfile",
+    "linter",
+    "code-formatter",
+    "static-code-analysis"
+  ]
